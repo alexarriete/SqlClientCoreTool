@@ -32,7 +32,7 @@ using SqlClientCoreTool;
   }
 ```
 
-##### Multiple Insert example
+##### Simple update example
 _We don't need to specify the name of the table if it matches the object type. Table must have a primary key_
 
 ```csharp
