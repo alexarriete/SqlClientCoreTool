@@ -1,4 +1,4 @@
-[![Getting Started](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.md) [![Getting Started](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.es.md)
+[![Getting Started](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.md) [![Getting Started](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/Readme.es.md)
 # What is this project about?
 
 SqlClientCoreTool is a class library implemented in c#. It contains several methods for the most common interactions between SQL and .Net apps. It can be used in small projects where the complexity of current frameworks is not required.
