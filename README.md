@@ -22,7 +22,7 @@ using SqlClientCoreTool;
 
 ## CRUD examples
 
-#####Multiple Insert example
+##### Multiple Insert example
 
 ```csharp
   public async Task InsertListAsyn(List<User> users)
@@ -32,7 +32,7 @@ using SqlClientCoreTool;
   }
 ```
 
-#####Multiple Insert example
+##### Multiple Insert example
 _We don't need to specify the name of the table if it matches the object type. Table must have a primary key_
 
 ```csharp
@@ -43,7 +43,7 @@ _We don't need to specify the name of the table if it matches the object type. T
   }
 ```
 
-#####Delete range example
+##### Delete range example
 _Removes a ragne of rows. The table must have a primary key_
 
 ```csharp
@@ -56,7 +56,7 @@ _Removes a ragne of rows. The table must have a primary key_
 
 ## Other examples
 
-#####Change current database
+##### Change current database
 _In the example we change the connection to a diferent database_
 
 ```csharp
@@ -75,7 +75,7 @@ _In the example we change the connection to a diferent database_
         }
 ```
 
-#####Create backup
+##### Create backup
 _Backup current dababase_
 
 ```csharp
@@ -96,5 +96,5 @@ _Backup current dababase_
         }
 ```
 
-##Summary
+## Summary
 Other examples can be found on [GitHub.](https://github.com/alexarriete/SqlClientCoreTool)
