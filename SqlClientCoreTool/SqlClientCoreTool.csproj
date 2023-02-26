@@ -21,6 +21,7 @@
     <PackageProjectUrl>https://acernuda.com/sqlclientcoretool</PackageProjectUrl>
     <PackageTags>SQL, .Net Core</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -30,6 +31,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>C:\Projects\Bibliotecas\SqlClientCoreTool\SqlClientCoreTool\SqlClientCoreTool.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Visual Studio Code\SQLCT\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
