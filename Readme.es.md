@@ -1,4 +1,4 @@
-[![Getting Started](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.md) [![Getting Started](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.es.md)
+[![Getting Started](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.md) [![Getting Started](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/Readme.es.md)
 
 # De qué trata este proyecto?
 
@@ -100,6 +100,6 @@ _En el ejemplo cambiamos la base de datos en uso_
         }
 ```
 
-## Summary
+## Conclusiones
 
 Otros ejemplos pueden ser encontrados en [GitHub.](https://github.com/alexarriete/SqlClientCoreTool)
