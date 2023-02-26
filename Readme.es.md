@@ -1,6 +1,6 @@
 [![Getting Started](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/README.md) [![Getting Started](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/alexarriete/SqlClientCoreTool/blob/master/Readme.es.md)
 
-# De qué trata este proyecto?
+# ¿De qué trata este proyecto?
 
 SqlClientCoreTool es una librería de clases implementada en c#. Contiene una serie de métodos para las interacciones más comunes entre SQL y las aplicaciones en .Net. Se puede utilizar en pequeños proyectos donde no se requiera la complejidad de los Frameworks actuales.
 Además de las operaciones CRUD existen un grupo de métodos nacidos de la experiencia de trabajar con las bases de datos, como la creación de Backups, el guardado de datos de sesión o la conversión de imágenes.
@@ -12,7 +12,7 @@ _En la versión actual_
 - net7.0 (_Para proyectos en .net 6 use la version 6.00_)
 - System.Data.SqlClient (>= 4.8.5)
 
-# How it works?
+# ¿Cómo funciona?
 
 Luego de instalar el [paquete de Nuget](https://www.nuget.org/packages/SqlClientCoreTool) seremos capaces de utilizar la clase DataGather y con ella las operaciones CRUD más comunes.
 
