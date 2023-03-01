@@ -98,4 +98,4 @@ _Backup current dababase_
 ```
 
 ## Summary
-Other examples can be found on [GitHub.](https://github.com/alexarriete/SqlClientCoreTool)
+Other examples can be found on [GitHub](https://github.com/alexarriete/SqlClientCoreTool) and [acernuda.com](https://acernuda.com/software)
