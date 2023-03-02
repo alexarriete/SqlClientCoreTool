@@ -18,7 +18,7 @@
     <FileVersion>1.2.0.0</FileVersion>
     <PackageReleaseNotes>.NET 7.0 Upgrade</PackageReleaseNotes>
     <Version>7.0.0</Version>
-    <PackageProjectUrl>https://acernuda.com/sqlclientcoretool</PackageProjectUrl>
+    <PackageProjectUrl>https://acernuda.com/Software/SqlClientCoreTool</PackageProjectUrl>
     <PackageTags>SQL, .Net Core</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
