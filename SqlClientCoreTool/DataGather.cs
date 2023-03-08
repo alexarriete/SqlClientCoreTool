@@ -14,7 +14,7 @@ namespace SqlClientCoreTool
 {
     /// <summary>
     /// Creates a connection to the database and contains methods for CRUD operations
-    /// Examples: https://acernuda.com/sqlclientcoretool
+    /// Examples: https://sqlcct.acernuda.com
     /// </summary>
     public sealed class DataGather
     {

@@ -26,7 +26,7 @@ namespace SqlClientCoreTool.Utils
 
     /// <summary>
     /// Methods to manage SCCT_SessionLog table.
-    /// Examples: https://acernuda.com/sqlclientcoretool
+    /// Examples: https://sqlcct.acernuda.com
     /// </summary>
     public sealed class SessionLog
     {
@@ -79,7 +79,7 @@ namespace SqlClientCoreTool.Utils
         /// If SCCT_SessionLog doesn't exist creates it and insert a record.
         /// Special permission are needed on database to create a table. 
         /// If user in ConnectionString doesn't have it you can previously create a table.
-        /// Script to create the table, available in https://acernuda.com/sqlclientcoretool
+        /// Script to create the table, available in https://sqlcct.acernuda.com
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
@@ -110,7 +110,7 @@ namespace SqlClientCoreTool.Utils
         /// If SCCT_SessionLog doesn't exist creates it and insert a record.
         /// Special permission are needed on database to create a table. 
         /// If user in ConnectionString doesn't have it you can previously create a table.
-        /// Script to create the table, available in https://acernuda.com/sqlclientcoretool
+        /// Script to create the table, available in https://sqlcct.acernuda.com
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
@@ -125,7 +125,7 @@ namespace SqlClientCoreTool.Utils
         /// If SCCT_SessionLog doesn't exist creates it and insert a record.
         /// Special permission are needed on database to create a table. 
         /// If user in ConnectionString doesn't have it you can previously create a table.
-        /// Script to create the table, available in https://acernuda.com/sqlclientcoretool
+        /// Script to create the table, available in https://sqlcct.acernuda.com
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
@@ -142,7 +142,7 @@ namespace SqlClientCoreTool.Utils
         /// If SCCT_SessionLog doesn't exist creates it and insert a record.
         /// Special permission are needed on database to create a table. 
         /// If user in ConnectionString doesn't have it you can previously create a table.
-        /// Script to create the table, available in https://acernuda.com/sqlclientcoretool#sessionlog
+        /// Script to create the table, available in https://sqlcct.acernuda.com
         /// </summary>
         /// <param name="key"></param>
         /// <param name="value"></param>
