@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using SqlClientCoreTool.Classes;
 
@@ -15,37 +17,57 @@ namespace SqlClientCoreTool
     public class Check
     {
         /// <summary>
-        /// Checks connectionstring in the configuration file.
+        /// Checks connectionstring
         /// </summary>
-        /// <param name="connectionString">A Connectionstring obtained from config, setting, etc.</param>
-        /// <param name="databaseName">Optional: database name</param>
+        /// <param name="connectionString"></param>
+        /// <param name="cancellationToken"></param>     
         /// <returns>Database name if exists</returns>
-        public static string CheckConnection(string connectionString, string databaseName = "")
+        public static async Task<string> CheckConnectionAsync(string connectionString, CancellationToken cancellationToken)
         {
-            DataGather dg = DataGather.GetInstance(connectionString, databaseName);
-            databaseName = Check.GetCurrentDataBase(dg);
             try
             {
-                return dg.GetSingleValue($"SELECT TOP 1 [Name] FROM sysdatabases WHERE Name LIKE '{databaseName}'", false, 10).ToString();
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    await conn.OpenAsync(cancellationToken);                    
+                    return conn.Database;
+                }
             }
-            catch (Exception ex)
+            catch (System.Exception)
+            {                
+                return "";
+            }
+        }
+        /// <summary>
+        /// Checks connectionstring.
+        /// </summary>
+        /// <param name="connectionString"></param>
+        /// <returns></returns>
+        public static async Task<string> CheckConnectionAsync(string connectionString)
+        {
+            try
+            {
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    await conn.OpenAsync();
+                    return conn.Database;
+                }
+            }
+            catch (System.Exception)
             {
                 return "";
             }
-            
-            return dg.CurrentDatabaseName;
         }
 
-        /// <summary>
-        /// Check connectionstring in the configuration file.
-        /// </summary>
-        /// <param name="connectionString">A Connectionstring obtained from config, setting, etc.</param>
-        /// <param name="databaseName">Optional: database name</param>
-        /// <returns>Database name if exists</returns>
-        public async static Task<string> CheckConnectionAsync(string connectionString, string databaseName = "")
-        {
-            return await Task.Run(() => CheckConnection(connectionString, databaseName));
-        }
+        ///// <summary>
+        ///// Check connectionstring in the configuration file.
+        ///// </summary>
+        ///// <param name="connectionString">A Connectionstring obtained from config, setting, etc.</param>
+        ///// <param name="databaseName">Optional: database name</param>
+        ///// <returns>Database name if exists</returns>
+        //public async static Task<string> CheckConnectionAsync(string connectionString, CancellationToken cancellationToken, string databaseName = "")
+        //{
+        //    return await Task.Run(() => CheckConnection(connectionString, cancellationToken, databaseName));
+        //}
 
 
         /// <summary>

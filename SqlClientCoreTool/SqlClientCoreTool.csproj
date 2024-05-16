@@ -16,13 +16,16 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <FileVersion>1.2.0.0</FileVersion>
-    <PackageReleaseNotes>Change project url</PackageReleaseNotes>
-    <Version>7.0.3</Version>
+    <PackageReleaseNotes>CheckConnectionAsync(string connectionString, CancellationToken cancellationToken)</PackageReleaseNotes>
+    <Version>7.0.4</Version>
     <PackageProjectUrl>https://sqlcct.acernuda.com</PackageProjectUrl>
     <PackageTags>SQL, .Net Core</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <Title>SQLClientCoreTool</Title>
+    <ApplicationIcon>ic-acernuda.ico</ApplicationIcon>
+    <PackageIcon>ic-acernuda-com.png</PackageIcon>
+    <RepositoryUrl>https://github.com/alexarriete/SqlClientCoreTool</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -34,6 +37,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="ic-acernuda.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\..\..\..\Visual Studio Code\SQLCT\Readme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -42,6 +49,17 @@
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ic-acernuda-com.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="ic-acernuda.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
