@@ -15,7 +15,7 @@ namespace Tester
         /// <summary>
         /// Connection string to SQLCCTool database with owner permissions.
         /// </summary>
-        public static string ConnectionString { get { return "Data Source=(local);Initial Catalog=SQLCCTool ;Integrated Security=true"; } }
+        public static string ConnectionString { get { return "Data Source=ACERNUDA\\SQLEXPRESS;Initial Catalog=SQLCCTool ;Integrated Security=true"; } }
 
         /// <summary>
         /// For testing purpose need to create two databases SQLCCTool and Copier

@@ -83,9 +83,11 @@ namespace SqlClientCoreTool.Utils
         /// <returns>If error returns exception message.</returns>
         internal static string BackUpDatabaseWithCompression(string connectionString, string databaseName, string targetPath, int timeOut = 1800)
         {
+           bool isExpress = IsExpress(connectionString);
+            string compression = isExpress ? string.Empty : "COMPRESSION,";
             StringBuilder sb = new StringBuilder();
-            sb.Append($"BACKUP DATABASE [{databaseName}] TO  DISK = '{targetPath}' WITH FORMAT, COMPRESSION,  STATS = 10 ");
-            
+            sb.Append($"BACKUP DATABASE [{databaseName}] TO  DISK = '{targetPath}' WITH FORMAT, {compression}  STATS = 10 ");
+            var tt = sb.ToString();
             try
             {
                 DataGather dg = DataGather.GetInstance(connectionString, databaseName);
@@ -96,6 +98,17 @@ namespace SqlClientCoreTool.Utils
                 return ex.Message;
             }
             return "";
+        }
+
+        internal static bool IsExpress(string connectionString)
+        {
+            DataGather dg = DataGather.GetInstance(connectionString);
+            var result = dg.Get<string>("SELECT SERVERPROPERTY('Edition')", false);
+            if(result != null && result.Count== 1)
+            {
+                return result.FirstOrDefault().ToLower().Contains("express");
+            }
+            return false;
         }
     }
 }

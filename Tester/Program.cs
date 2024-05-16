@@ -7,8 +7,9 @@ using Tester;
 // CRUD operation could be found in SQLCLIENTUTEST project.
 // Script.sql must be previously executed in Sql management studio or any sql base editor *************************
 
-bool resultchangeDatabase = TestCases.TestChangeDatabase();
+    bool resultchangeDatabase = TestCases.TestChangeDatabase();
 
 bool resultBackupDatabase = TestCases.TestBackupDatabase(@"c:\backups\copier.bak");
 
 string serverName = TestCases.TestGetServerName();
+var tt = serverName;
