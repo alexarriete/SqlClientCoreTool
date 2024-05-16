@@ -7,8 +7,8 @@ In addition to CRUD operations, there are a group of methods born from the exper
 
 _In current version_
 
-- net7.0 (_For projects in .net 6 use Version 6.00_)
-- System.Data.SqlClient (>= 4.8.5)
+- net8.0 (_For projects in .net 7 use Version 7.00_)
+- System.Data.SqlClient (>= 4.8.6)
 
 # How it works?
 
