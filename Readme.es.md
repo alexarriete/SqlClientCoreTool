@@ -9,8 +9,8 @@ Además de las operaciones CRUD existen un grupo de métodos nacidos de la exper
 
 _En la versión actual_
 
-- net7.0 (_Para proyectos en .net 6 use la version 6.00_)
-- System.Data.SqlClient (>= 4.8.5)
+- net8.0 (_Para proyectos en .net 7 use la version 7.00_)
+- System.Data.SqlClient (>= 4.8.6)
 
 # ¿Cómo funciona?
 
